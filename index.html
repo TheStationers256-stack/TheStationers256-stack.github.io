@@ -1,10 +1,313 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" class="scroll-smooth">
 <head>
-  <title>The Stationers</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Stationers | Publishing for First-Time Authors</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#d97706', // Amber-600
+                        secondary: '#1c1917', // Stone-900
+                        paper: '#fafaf9', // Stone-50
+                        accent: '#f59e0b', // Amber-500
+                    },
+                    fontFamily: {
+                        serif: ['Merriweather', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Merriweather:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Merriweather', serif; }
+    </style>
 </head>
-<body>
-  <h1>The Stationers</h1>
-  <p>Website is live on GitHub Pages.</p>
+<body class="bg-paper text-stone-800 antialiased">
+
+    <header class="fixed w-full bg-white/90 backdrop-blur-sm border-b border-stone-200 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center gap-2">
+                    <i class="fa-solid fa-feather-pointed text-3xl text-primary"></i>
+                    <span class="font-serif font-bold text-2xl tracking-tight text-secondary">The Stationers</span>
+                </div>
+                
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#how-it-works" class="text-stone-600 hover:text-primary transition">How it Works</a>
+                    <a href="#services" class="text-stone-600 hover:text-primary transition">Services</a>
+                    <a href="#portfolio" class="text-stone-600 hover:text-primary transition">Bookstore</a>
+                    <a href="#stories" class="text-stone-600 hover:text-primary transition">Success Stories</a>
+                </div>
+
+                <div class="hidden md:flex">
+                    <a href="#contact" class="bg-secondary text-white px-6 py-2.5 rounded-full hover:bg-primary transition duration-300 font-medium text-sm">
+                        Start Your Journey
+                    </a>
+                </div>
+
+                <div class="md:hidden flex items-center">
+                    <button class="text-stone-600 hover:text-secondary focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="relative pt-32 pb-20 lg:pt-40 lg:pb-28 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <span class="inline-block py-1 px-3 rounded-full bg-amber-100 text-amber-800 text-xs font-bold tracking-wider uppercase mb-6">For First-Time Authors</span>
+            <h1 class="text-5xl md:text-7xl font-bold text-secondary mb-6 leading-tight">
+                Don't let your story <br/>
+                <span class="text-primary italic">stay hidden.</span>
+            </h1>
+            <p class="mt-4 max-w-2xl mx-auto text-xl text-stone-600 mb-10">
+                We simplify self-publishing. From manuscript formatting to cover design and global distribution, we turn your draft into a bestseller.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#contact" class="px-8 py-4 bg-primary text-white text-lg font-semibold rounded-lg shadow-lg hover:bg-amber-700 transition transform hover:-translate-y-1">
+                    Publish My Book
+                </a>
+                <a href="#how-it-works" class="px-8 py-4 bg-white border border-stone-300 text-stone-700 text-lg font-semibold rounded-lg hover:bg-stone-50 transition">
+                    View Process
+                </a>
+            </div>
+            
+            <div class="mt-12 flex items-center justify-center gap-6 text-stone-400 grayscale opacity-70">
+                <div class="flex items-center gap-2"><i class="fab fa-amazon text-2xl"></i> <span class="text-sm font-semibold">Kindle Direct</span></div>
+                <div class="flex items-center gap-2"><i class="fab fa-google text-2xl"></i> <span class="text-sm font-semibold">Google Books</span></div>
+                <div class="flex items-center gap-2"><i class="fas fa-book-open text-2xl"></i> <span class="text-sm font-semibold">IngramSpark</span></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-white" id="services">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4">Everything a New Author Needs</h2>
+                <p class="text-stone-600 max-w-2xl mx-auto">Writing the book was the hard part. We handle the technical confusing stuff so you can focus on being an author.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <div class="bg-paper p-8 rounded-2xl border border-stone-100 hover:shadow-xl transition duration-300 group">
+                    <div class="w-14 h-14 bg-amber-100 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary transition">
+                        <i class="fa-solid fa-pen-nib text-2xl text-amber-700 group-hover:text-white transition"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-secondary mb-3">Professional Editing</h3>
+                    <p class="text-stone-600 leading-relaxed">Our editors don't just fix typos; they enhance your voice. Copy editing, proofreading, and structural critique included.</p>
+                </div>
+
+                <div class="bg-paper p-8 rounded-2xl border border-stone-100 hover:shadow-xl transition duration-300 group">
+                    <div class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center mb-6 group-hover:bg-blue-600 transition">
+                        <i class="fa-solid fa-book-open text-2xl text-blue-700 group-hover:text-white transition"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-secondary mb-3">Cover Design & Formatting</h3>
+                    <p class="text-stone-600 leading-relaxed">People <em>do</em> judge a book by its cover. Get a custom design and perfect interior typesetting for print and ebook.</p>
+                </div>
+
+                <div class="bg-paper p-8 rounded-2xl border border-stone-100 hover:shadow-xl transition duration-300 group">
+                    <div class="w-14 h-14 bg-green-100 rounded-xl flex items-center justify-center mb-6 group-hover:bg-green-600 transition">
+                        <i class="fa-solid fa-globe text-2xl text-green-700 group-hover:text-white transition"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-secondary mb-3">Global Distribution</h3>
+                    <p class="text-stone-600 leading-relaxed">We handle the ISBNs and upload your book to Amazon, Barnes & Noble, and thousands of retailers worldwide.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-stone-900 text-white" id="how-it-works">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">From MS Word to <br/><span class="text-primary">Published Author</span></h2>
+                    <p class="text-stone-400 text-lg mb-8">We have broken down the overwhelming publishing industry into 4 simple steps.</p>
+                    
+                    <div class="space-y-8">
+                        <div class="flex">
+                            <div class="flex-shrink-0 h-10 w-10 rounded-full bg-primary flex items-center justify-center font-bold">1</div>
+                            <div class="ml-4">
+                                <h4 class="text-xl font-bold">Submission & Review</h4>
+                                <p class="text-stone-400 mt-1">Send us your draft. We provide a free assessment of what your book needs.</p>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div class="flex-shrink-0 h-10 w-10 rounded-full border-2 border-primary text-primary flex items-center justify-center font-bold">2</div>
+                            <div class="ml-4">
+                                <h4 class="text-xl font-bold">The Polish</h4>
+                                <p class="text-stone-400 mt-1">Editing, cover design, and interior layout happens here. You approve every detail.</p>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div class="flex-shrink-0 h-10 w-10 rounded-full border-2 border-stone-600 text-stone-400 flex items-center justify-center font-bold">3</div>
+                            <div class="ml-4">
+                                <h4 class="text-xl font-bold">Launch Prep</h4>
+                                <p class="text-stone-400 mt-1">We set up your author accounts, copyright, and ISBN registration.</p>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div class="flex-shrink-0 h-10 w-10 rounded-full border-2 border-stone-600 text-stone-400 flex items-center justify-center font-bold">4</div>
+                            <div class="ml-4">
+                                <h4 class="text-xl font-bold">Publication Day</h4>
+                                <p class="text-stone-400 mt-1">Your book goes live globally. You keep 100% of your royalties.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="rounded-2xl bg-gradient-to-tr from-stone-800 to-stone-700 p-8 transform rotate-3 hover:rotate-0 transition duration-500">
+                        <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Book Publishing" class="rounded-lg shadow-2xl w-full h-auto opacity-90">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-paper" id="portfolio">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-secondary">Fresh off the Press</h2>
+                <p class="text-stone-600 mt-3">Check out some of the recent titles published by our authors.</p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="group cursor-pointer">
+                    <div class="aspect-[2/3] bg-stone-300 rounded-lg shadow-md overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1543002588-bfa74002ed7e?auto=format&fit=crop&q=80&w=400" alt="Book Cover" class="object-cover w-full h-full group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-black/60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                            <span class="text-white font-semibold">View on Amazon</span>
+                        </div>
+                    </div>
+                    <h3 class="mt-4 font-bold text-secondary text-lg">The Silent Echo</h3>
+                    <p class="text-sm text-stone-500">by Sarah Jenkins</p>
+                </div>
+
+                <div class="group cursor-pointer">
+                    <div class="aspect-[2/3] bg-stone-300 rounded-lg shadow-md overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1541963463532-d68292c34b19?auto=format&fit=crop&q=80&w=400" alt="Book Cover" class="object-cover w-full h-full group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-black/60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                            <span class="text-white font-semibold">View on Amazon</span>
+                        </div>
+                    </div>
+                    <h3 class="mt-4 font-bold text-secondary text-lg">Modern Philosophy</h3>
+                    <p class="text-sm text-stone-500">by Dr. Alan Grant</p>
+                </div>
+
+                <div class="group cursor-pointer">
+                    <div class="aspect-[2/3] bg-stone-300 rounded-lg shadow-md overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1589829085413-56de8ae18c73?auto=format&fit=crop&q=80&w=400" alt="Book Cover" class="object-cover w-full h-full group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-black/60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                            <span class="text-white font-semibold">View on Amazon</span>
+                        </div>
+                    </div>
+                    <h3 class="mt-4 font-bold text-secondary text-lg">Financial Freedom</h3>
+                    <p class="text-sm text-stone-500">by Mark Cuban</p>
+                </div>
+
+                <div class="group cursor-pointer">
+                    <div class="aspect-[2/3] bg-stone-300 rounded-lg shadow-md overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&q=80&w=400" alt="Book Cover" class="object-cover w-full h-full group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-black/60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                            <span class="text-white font-semibold">View on Amazon</span>
+                        </div>
+                    </div>
+                    <h3 class="mt-4 font-bold text-secondary text-lg">Culinary Secrets</h3>
+                    <p class="text-sm text-stone-500">by Julia Child</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20" id="contact">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-3xl shadow-xl overflow-hidden">
+                <div class="p-8 md:p-12 text-center">
+                    <h2 class="text-3xl font-bold text-secondary mb-4">Ready to hold your book in your hands?</h2>
+                    <p class="text-stone-600 mb-8">Schedule a free 15-minute consultation with our publishing guide. No pressure, just a chat about your story.</p>
+                    
+                    <form class="space-y-4 max-w-md mx-auto text-left">
+                        <div>
+                            <label class="block text-sm font-medium text-stone-700 mb-1">Name</label>
+                            <input type="text" placeholder="Your Name" class="w-full px-4 py-3 rounded-lg bg-stone-50 border border-stone-200 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-stone-700 mb-1">Email</label>
+                            <input type="email" placeholder="you@example.com" class="w-full px-4 py-3 rounded-lg bg-stone-50 border border-stone-200 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-stone-700 mb-1">Book Genre (if known)</label>
+                            <select class="w-full px-4 py-3 rounded-lg bg-stone-50 border border-stone-200 outline-none">
+                                <option>Fiction</option>
+                                <option>Non-Fiction</option>
+                                <option>Children's Book</option>
+                                <option>Poetry</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                        <button class="w-full py-4 bg-primary text-white font-bold rounded-lg hover:bg-amber-700 transition shadow-lg mt-4">
+                            Request Consultation
+                        </button>
+                    </form>
+                    <p class="text-xs text-stone-400 mt-6">By clicking, you agree to our Terms & Privacy. We hate spam too.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-secondary text-stone-400 py-12 border-t border-stone-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8">
+            
+            <div class="col-span-1 md:col-span-1">
+                <div class="flex items-center gap-2 mb-4 text-white">
+                    <i class="fa-solid fa-feather-pointed text-2xl text-primary"></i>
+                    <span class="font-serif font-bold text-xl tracking-tight">The Stationers</span>
+                </div>
+                <p class="text-sm">Helping first-time authors navigate the journey from manuscript to marketplace.</p>
+            </div>
+
+            <div>
+                <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">Company</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#" class="hover:text-primary transition">About Us</a></li>
+                    <li><a href="#" class="hover:text-primary transition">Our Team</a></li>
+                    <li><a href="#" class="hover:text-primary transition">Careers</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">Resources</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#" class="hover:text-primary transition">Blog for Writers</a></li>
+                    <li><a href="#" class="hover:text-primary transition">Royalty Calculator</a></li>
+                    <li><a href="#" class="hover:text-primary transition">Guide to ISBNs</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">Contact</h4>
+                <ul class="space-y-2 text-sm">
+                    <li>hello@thestationers.com</li>
+                    <li>+1 (555) 123-4567</li>
+                    <li class="flex gap-4 mt-4">
+                        <a href="#" class="text-xl hover:text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-xl hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-xl hover:text-white"><i class="fab fa-linkedin"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-8 border-t border-stone-800 text-xs text-center">
+            &copy; 2023 The Stationers Publishing House. All rights reserved.
+        </div>
+    </footer>
+
 </body>
 </html>
