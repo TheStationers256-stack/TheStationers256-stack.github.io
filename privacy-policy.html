@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | The Stationers</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#d97706', // Amber-600
+                        secondary: '#1c1917', // Stone-900
+                        paper: '#fafaf9', // Stone-50
+                        accent: '#f59e0b', // Amber-500
+                    },
+                    fontFamily: {
+                        serif: ['Merriweather', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Merriweather:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Merriweather', serif; }
+    </style>
+</head>
+<body class="bg-paper text-stone-800 antialiased flex flex-col min-h-screen">
+
+    <header class="fixed w-full bg-white/90 backdrop-blur-sm border-b border-stone-200 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="index.html" class="flex-shrink-0 flex items-center gap-2 group">
+                    <i class="fa-solid fa-feather-pointed text-3xl text-primary group-hover:scale-110 transition"></i>
+                    <span class="font-serif font-bold text-2xl tracking-tight text-secondary">The Stationers</span>
+                </a>
+                
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html#how-it-works" class="text-stone-600 hover:text-primary transition">How it Works</a>
+                    <a href="index.html#services" class="text-stone-600 hover:text-primary transition">Services</a>
+                    <a href="index.html#portfolio" class="text-stone-600 hover:text-primary transition">Bookstore</a>
+                </div>
+
+                <div class="hidden md:flex">
+                    <a href="index.html#contact" class="bg-stone-100 text-stone-700 border border-stone-200 px-6 py-2.5 rounded-full hover:bg-stone-200 transition duration-300 font-medium text-sm">
+                        Back to Home
+                    </a>
+                </div>
+
+                <div class="md:hidden flex items-center">
+                    <button class="text-stone-600 hover:text-secondary focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow pt-32 pb-20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="border-b border-stone-200 pb-8 mb-10">
+                <span class="text-primary font-bold tracking-wider uppercase text-sm">Last Updated: October 24, 2023</span>
+                <h1 class="text-4xl md:text-5xl font-bold text-secondary mt-2">Privacy Policy</h1>
+                <p class="text-xl text-stone-500 mt-4 leading-relaxed">
+                    At The Stationers, we respect your words and your privacy. This policy outlines how we handle your manuscripts, personal data, and digital footprint.
+                </p>
+            </div>
+
+            <div class="space-y-12 text-stone-700">
+                
+                <section>
+                    <h2 class="text-2xl font-bold text-secondary mb-4">1. Introduction</h2>
+                    <p class="mb-4 leading-7">
+                        The Stationers ("we," "us," or "our") operates the website https://thestationers.com and the associated mobile application "The Stationers Author App" (the "Service"). 
+                        We are committed to protecting the privacy of our authors, visitors, and app users. This Privacy Policy explains what information we collect, how we use it, 
+                        and your rights regarding your data, in compliance with GDPR, CCPA, and Google Play Console Developer Policies.
+                    </p>
+                </section>
+
+                <section>
+                    <h2 class="text-2xl font-bold text-secondary mb-4">2. Information We Collect</h2>
+                    <p class="mb-4">We collect information to facilitate the publishing process and improve our services. This includes:</p>
+                    <ul class="list-disc pl-6 space-y-2 mb-4">
+                        <li><strong>Personal Identification:</strong> Name, email address, phone number, and postal address for contract generation and royalty payments.</li>
+                        <li><strong>Manuscript Data:</strong> Book drafts, cover art ideas, and metadata (blurbs, genre info) uploaded to our secure servers.</li>
+                        <li><strong>Financial Data:</strong> Bank account details or PayPal addresses processed securely via our payment partners (Stripe/PayPal) for royalties and service fees. We do not store full credit card numbers on our servers.</li>
+                        <li><strong>Device Information:</strong> IP address, browser type, operating system version, and unique device identifiers (UUID) when using our App.</li>
+                    </ul>
+                </section>
+
+                <section class="bg-amber-50 p-8 rounded-2xl border border-amber-100">
+                    <div class="flex items-center gap-3 mb-4">
+                        <i class="fab fa-google-play text-2xl text-primary"></i>
+                        <h2 class="text-2xl font-bold text-secondary m-0">3. Android & Google Play Requirements</h2>
+                    </div>
+                    <p class="mb-4 text-sm font-bold text-amber-800 uppercase tracking-wide">For users of "The Stationers Author App"</p>
+                    
+                    <div class="space-y-4">
+                        <div>
+                            <h3 class="font-bold text-lg text-secondary">A. Permissions & Sensitive Data</h3>
+                            <p class="leading-relaxed text-sm">Our app may request access to specific device features. In accordance with Google Play policies:</p>
+                            <ul class="list-disc pl-5 mt-2 space-y-1 text-sm">
+                                <li><strong>Storage (READ_EXTERNAL_STORAGE):</strong> Strictly used to allow you to upload manuscript files (PDF/DOCX) from your device to our portal.</li>
+                                <li><strong>Camera/Photos:</strong> Used only if you choose to upload a profile picture or cover reference image.</li>
+                            </ul>
+                            <p class="mt-2 text-sm italic">We do not access your contacts, SMS, or location data at any time.</p>
+                        </div>
+
+                        <div>
+                            <h3 class="font-bold text-lg text-secondary">B. Data Safety & Encryption</h3>
+                            <p class="leading-relaxed text-sm">
+                                All data transmitted between the App and our servers is encrypted using HTTPS/TLS 1.2+. 
+                                We define our data safety practices in the Google Play Console, certifying that we do not sell your personal data to third-party data brokers.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3 class="font-bold text-lg text-secondary">C. Account Deletion (App)</h3>
+                            <p class="leading-relaxed text-sm">
+                                As required by Google Play policy, users can request full account deletion directly within the App settings (Profile > Settings > Delete Account) 
+                                or by visiting our web portal. Upon deletion request, all personal identification is removed within 30 days, 
+                                though legal publishing contracts may require retention of specific transaction records for tax purposes.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 class="text-2xl font-bold text-secondary mb-4">4. How We Use Your Data</h2>
+                    <p class="mb-4">Your information is used strictly for the following purposes:</p>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div class="bg-white p-4 rounded-lg border border-stone-200">
+                            <h4 class="font-bold text-secondary mb-2">Service Fulfillment</h4>
+                            <p class="text-sm">To edit, format, and distribute your book to retailers like Amazon and IngramSpark.</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg border border-stone-200">
+                            <h4 class="font-bold text-secondary mb-2">Communication</h4>
+                            <p class="text-sm">To send publishing updates, royalty statements, and contract revisions.</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg border border-stone-200">
+                            <h4 class="font-bold text-secondary mb-2">Legal Compliance</h4>
+                            <p class="text-sm">To file copyright registrations and assign ISBNs in your name.</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg border border-stone-200">
+                            <h4 class="font-bold text-secondary mb-2">App Functionality</h4>
+                            <p class="text-sm">To sync your project status across devices and authenticate your login.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 class="text-2xl font-bold text-secondary mb-4">5. Third-Party Sharing</h2>
+                    <p class="mb-4">We do not sell your data. We share data only with necessary partners to fulfill our service:</p>
+                    <ul class="list-disc pl-6 space-y-2">
+                        <li><strong>Retailers:</strong> Book metadata is sent to Amazon KDP, Apple Books, and Barnes & Noble for listing purposes.</li>
+                        <li><strong>Printers:</strong> Manuscript files are sent to print-on-demand facilities (e.g., IngramSpark) solely for printing orders.</li>
+                        <li><strong>Analytics:</strong> We use Google Analytics and Firebase (for the App) to monitor system performance. These tools collect anonymized usage data.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2 class="text-2xl font-bold text-secondary mb-4">6. Your Rights (GDPR & CCPA)</h2>
+                    <p class="mb-4">Regardless of your location, we extend these rights to all authors:</p>
+                    <ul class="list-none space-y-3">
+                        <li class="flex gap-3">
+                            <i class="fa-solid fa-check text-primary mt-1"></i>
+                            <span><strong>Right to Access:</strong> You may request a copy of all personal data we hold about you.</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <i class="fa-solid fa-check text-primary mt-1"></i>
+                            <span><strong>Right to Rectification:</strong> You can correct incomplete or inaccurate data via your dashboard.</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <i class="fa-solid fa-check text-primary mt-1"></i>
+                            <span><strong>Right to Erasure:</strong> You may request we delete your data, subject to tax/legal retention laws regarding published works.</span>
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2 class="text-2xl font-bold text-secondary mb-4">7. Children's Privacy</h2>
+                    <p class="mb-4">
+                        Our services are not intended for children under 13. We do not knowingly collect data from children. 
+                        If a parent discovers that a child under 13 has provided us with data, please contact us immediately for deletion.
+                    </p>
+                </section>
+
+                <section>
+                    <h2 class="text-2xl font-bold text-secondary mb-4">8. Contact Us</h2>
+                    <p class="mb-4">If you have questions about this policy or wish to exercise your data rights, please contact our Data Protection Officer:</p>
+                    <div class="bg-stone-100 p-6 rounded-xl">
+                        <p class="font-bold text-secondary">The Stationers Publishing House</p>
+                        <p class="mt-1">Attn: Privacy Team</p>
+                        <p class="mt-1">123 Writers Block Ave, Suite 400</p>
+                        <p class="mt-1">New York, NY 10012</p>
+                        <hr class="border-stone-300 my-4">
+                        <p class="flex items-center gap-2"><i class="fa-solid fa-envelope text-primary"></i> privacy@thestationers.com</p>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-secondary text-stone-400 py-12 border-t border-stone-800 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8">
+            
+            <div class="col-span-1 md:col-span-1">
+                <div class="flex items-center gap-2 mb-4 text-white">
+                    <i class="fa-solid fa-feather-pointed text-2xl text-primary"></i>
+                    <span class="font-serif font-bold text-xl tracking-tight">The Stationers</span>
+                </div>
+                <p class="text-sm">Helping first-time authors navigate the journey from manuscript to marketplace.</p>
+            </div>
+
+            <div>
+                <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">Company</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="index.html#about" class="hover:text-primary transition">About Us</a></li>
+                    <li><a href="#" class="hover:text-primary transition">Our Team</a></li>
+                    <li><a href="#" class="hover:text-primary transition">Careers</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">Resources</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#" class="hover:text-primary transition">Blog for Writers</a></li>
+                    <li><a href="#" class="hover:text-primary transition">Royalty Calculator</a></li>
+                    <li><a href="#" class="hover:text-primary transition">Guide to ISBNs</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">Legal</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#" class="text-white font-bold">Privacy Policy</a></li>
+                    <li><a href="#" class="hover:text-primary transition">Terms of Service</a></li>
+                    <li><a href="#" class="hover:text-primary transition">Cookie Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-8 border-t border-stone-800 text-xs text-center">
+            &copy; 2023 The Stationers Publishing House. All rights reserved.
+        </div>
+    </footer>
+
+</body>
+</html>
